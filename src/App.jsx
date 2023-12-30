@@ -4,7 +4,11 @@ import ImgCrypto from './img/imagen-criptos.png'
 import Form from './components/Form'
 import Result from './components/Result'
 import Spinner from './components/Spinner'
+import Footer from './components/Footer'
 
+const Div = styled.div`
+  height: 1200px;
+`
 const Container = styled.div`
   max-width: 900px;
   margin: 0 auto;
@@ -70,6 +74,7 @@ function App() {
   }, [currencies])
 
   return (
+    <Div>
       <Container>
         <Image src={ImgCrypto} alt='Crypto Image' />
         <div>
@@ -83,6 +88,8 @@ function App() {
           {res.PRICE && <Result res={res} />}
         </div>
       </Container>
+      <Footer />
+      </Div>
   )
 }
 
