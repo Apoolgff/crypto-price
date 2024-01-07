@@ -5,6 +5,7 @@ const currencies = [
     {id: 'EUR', name: 'Euro'},
     {id: 'GBP', name: 'Libra Esterlina'},
     {id: 'JPY', name: 'Yen Japones'},
+    {id: 'RUB', name: 'Rublo Ruso'},
 ]
 
 export { currencies }
